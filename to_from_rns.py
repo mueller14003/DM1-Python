@@ -15,7 +15,3 @@ print(from_rns_list(rns_list))
 
 list_mod = lambda l,m: [m**2%l[i] for i in range(0,len(l))]
 mod_list = lambda l,m: [l[i]%m for i in range(0,len(l))]
-print(mod_list(from_rns_list(rns_list),16))
-print(list_mod(from_rns_list(rns_list),105))
-print(list_mod(from_rns_list(rns_list),16))
-# I have found no correlation.
