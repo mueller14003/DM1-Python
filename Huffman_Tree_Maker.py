@@ -2,7 +2,7 @@ input_text = input("Please enter desired text: ")
 
 mktree = lambda n,i,r,p='': {'0':mktree(n,n[i][0],r,p+'0'),'1':mktree(n,n[i][1],r,p+'1')} if len(n[i]) == 2 else setr(i,r,p)
 
-def setr(i,r,p=''):
+def setr(i,r,p):
     r[i] = p
     return i
 
