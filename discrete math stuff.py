@@ -1,2 +1,0 @@
-import nprime
-#do stuff
