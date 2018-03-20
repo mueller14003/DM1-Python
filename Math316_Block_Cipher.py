@@ -6,7 +6,7 @@ d = {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h', 9: 'i', 10:
 alphadec = lambda n: a.get(n, "Invalid Letter")
 decalpha = lambda n: d.get(n, "Invalid number")
 to_list = lambda e,k: seg_list(list(map(int,e.split(' '))),k,lambda n:n)
-seg_list = lambda m,k,func: [func(m[i:i+len(k[0])]) for i in range(0,len(m),len(k[0]))]
+seg_list = lambda m,k,func: list(map(lambda i: func(m[i:i+len(k[0])]),range(0,len(m),len(k[0]))))
 dalist = lambda m: list(map(decalpha,m))
 adlist = lambda m: list(map(alphadec,m))
 make_list = lambda m=None,e=None: [[1 for i in range(0,int(len(list(m))**.5))] for j in range(0,int(len(list(m))**.5))] if m else [[1 for i in range(0,int(len(list(map(int,e.split(' '))))**.5))] for j in range(0,int(len(list(map(int,e.split(' '))))**.5))]
