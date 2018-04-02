@@ -11,7 +11,9 @@ def cross():
         A = list(map(int, input("A: ").split()))
         B = list(map(int, input("B: ").split()))
         AxB = list(np.cross(a=A,b=B))
+        BxA = list(np.cross(a=B,b=A))
         print("A x B =",AxB)
+        print("B x A =",BxA)
 
     elif t == "a":
         A = float(input("A magnitude: "))
