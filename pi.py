@@ -1,4 +1,12 @@
-fact = lambda n: n*fact(n-1) if n > 1 else 1
-calc_pi = lambda n: (12/(640320*(640320**.5)))*sum(list(map(lambda k: (((-1)**k)*fact(6*k)*(13591409+(545140134*k)))/(fact(3*k)*(fact(k)**3)*640320**(3*k)),range(0,n+1))))
-print(format(1/calc_pi(1),'.100f'))
+#f=lambda n:n*f(n-1)if n>1else 1
 
+# from decimal import*
+# getcontext().prec=1001
+# D=Decimal
+# print(sum(D(16)**-k*(D(4)/(8*k+1)-D(2)/(8*k+4)-D(1)/(8*k+5)-D(1)/(8*k+6))for k in range(999)))
+
+from math import*
+from decimal import*
+getcontext().prec=1002
+D=Decimal
+print(str(sum(D(1)/factorial(k)for k in range(999)))[:-1])
