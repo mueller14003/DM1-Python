@@ -17,7 +17,10 @@ printer = lambda n,f: [*map(print,f(n))]
 
 #printer(100,prime_list)
 
+# PI
 # [print(n)for n in range(2,99)if all(n%i for i in range(2,n))]
 # #[*map(print,list(iter(input,'.')))] #This is cool!! Though not related to prime numbers...
+
+# Divisors
 # r=range
 #[print(*[i for i in r(1,n+1)if n%i<1])for n in r(1,101)]
