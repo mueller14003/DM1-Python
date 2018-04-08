@@ -6,6 +6,11 @@
 # D=Decimal;o=D(1)
 # print(sum(D(16)**-n*(4*o/(8*n+1)-o/(4*n+2)-o/(8*n+5)-o/(8*n+6))for n in range(999)))
 
+# from decimal import*
+# getcontext().prec=1001
+# D=Decimal;o=D(1)
+# print(sum((4*o/(8*k+1)-o/(4*k+2)-o/(8*k+5)-o/(8*k+6))/D(16)**k for k in range(999)))
+
 # EULER'S NUMBER
 # import math,decimal
 # decimal.getcontext().prec=1002
