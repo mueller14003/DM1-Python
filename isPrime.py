@@ -15,7 +15,7 @@ prime_list = lambda n:[i for i in range(2,n+1)if is_Prime(i)]
 plist=lambda n:[print(i)for i in range(2,n+1)if all(i%j for j in range(2,i))]
 printer = lambda n,f: [*map(print,f(n))]
 
-printer(100,prime_list)
+#printer(100,prime_list)
 #plist(100)
 
 # PI

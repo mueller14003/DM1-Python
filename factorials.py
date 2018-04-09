@@ -12,3 +12,10 @@ t1 = time.time()
 f1 = mfact(10000)
 t2 = time.time()
 print("Value: {}\nDigits: {}\nTime: {}".format(f1,len(str(f1)),t2-t1))
+
+class symbol_func:
+    def __init__(self):
+        self.symb = '!'
+
+    def function_maker(self):
+        

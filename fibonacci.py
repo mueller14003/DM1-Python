@@ -24,4 +24,5 @@
 
 # PI, but with a different library - unusable for golf
 # from mpmath import*;mp.dps=1001;print(pi)
+n=2;exec('n+=1;all(n%i for i in range(2,n))and print(n);'*98)
 
