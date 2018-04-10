@@ -13,9 +13,13 @@ f1 = mfact(10000)
 t2 = time.time()
 print("Value: {}\nDigits: {}\nTime: {}".format(f1,len(str(f1)),t2-t1))
 
-class symbol_func:
-    def __init__(self):
-        self.symb = '!'
+make_f=lambda f:(lambda n:reduce(mul,range(n%len(f)or len(f),n+1,len(f)),1))if all(x=='!'for x in f)else lambda n:n
+call_f=lambda n,f:make_f(f)(n)
 
-    def function_maker(self):
-        pass
+n=make_f('wow')
+sf = make_f('!')
+df = make_f('!!')
+tf = make_f('!!!')
+qf=make_f('!!!!')
+
+print(df(7))
