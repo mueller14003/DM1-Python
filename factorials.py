@@ -18,4 +18,4 @@ class symbol_func:
         self.symb = '!'
 
     def function_maker(self):
-
+        pass
