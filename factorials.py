@@ -23,4 +23,4 @@ tf = make_f('!!!')
 qf=make_f('!!!!')
 
 
-print(sum(-df(2*n-1)/sf(2*n+3)for n in range(0,100)))
+print(sum(-df(abs(2*n-1))/sf(2*n+3)for n in range(0,1)))
