@@ -6,6 +6,16 @@
 # D=Decimal;o=D(1)
 # print(sum(D(16)**-n*(4*o/(8*n+1)-o/(4*n+2)-o/(8*n+5)-o/(8*n+6))for n in range(999)))
 
+
+# Just for fun
+# l=10
+# while 0>l>9:l=int(input("Length: "))
+# s=str(int('1'*l)**2)
+# [print('%{}s'.format(l-1)%s[:i-1]+s[-i:])for i in map(int,s)]
+
+I=int
+for i in map(I,'%s'%I('1'*9)**2):print(' '*(9-i),I('1'*i)**2)
+
 # from decimal import*
 # getcontext().prec=1001
 # D=Decimal;o=D(1)
