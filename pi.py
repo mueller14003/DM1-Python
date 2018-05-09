@@ -6,6 +6,11 @@
 # D=Decimal;o=D(1)
 # print(sum(D(16)**-n*(4*o/(8*n+1)-o/(4*n+2)-o/(8*n+5)-o/(8*n+6))for n in range(999)))
 
+# Tau
+# from decimal import*
+# getcontext().prec=1001
+# o=Decimal(1)
+# print(2*sum((4*o/(8*k+1)-o/(4*k+2)-o/(8*k+5)-o/(8*k+6))/(16*o)**k for k in range(999)))
 
 # Just for fun
 # l=10
@@ -13,8 +18,8 @@
 # s=str(int('1'*l)**2)
 # [print('%{}s'.format(l-1)%s[:i-1]+s[-i:])for i in map(int,s)]
 
-I=int
-for i in map(I,'%s'%I('1'*9)**2):print(' '*(9-i),I('1'*i)**2)
+# I=int
+# for i in map(I,'%s'%I('1'*9)**2):print(' '*(9-i),I('1'*i)**2)
 
 # from decimal import*
 # getcontext().prec=1001
@@ -46,3 +51,4 @@ for i in map(I,'%s'%I('1'*9)**2):print(' '*(9-i),I('1'*i)**2)
 #  if not i%5:n+='Buzz'
 #  if n:print(n)
 #  else:print(i)
+# i=1;n='';n+='Fizz';n+='Buzz';print(n) if n else print(i);i+=1
